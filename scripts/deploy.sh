@@ -1,10 +1,16 @@
 #!/bin/bash
 
-rm -r C:/xampp/htdocs/ventas;
-rm -r C:/xampp/php/ventas;
+rm -r ./docker/apache/html/blog;
+rm -r ./docker/apache/php/blog;
 
-mkdir C:/xampp/htdocs/ventas;
-mkdir C:/xampp/php/ventas;
+mkdir ./docker/apache/html/blog;
+mkdir ./docker/apache/php/blog;
 
-cp -r ./dist/web/* C:/xampp/htdocs/ventas;
-cp -r ./dist/php/* C:/xampp/php/ventas;
+cp -r ./dist/web/* ./docker/apache/html/blog;
+cp -r ./dist/php/* ./docker/apache/php/blog;
+
+npm run start_apache;
+npm run start_mysql;
+
+
+read;

@@ -6,7 +6,9 @@
   "scripts": {
     "build": ".\\scripts\\build.sh",
     "deploy": "npm run build && .\\scripts\\deploy.sh",
-    "start": ".\\scripts\\start.sh"
+    "start": ".\\scripts\\start.sh",
+    "start_apache": ".\\scripts\\start_apache.sh",
+    "start_mysql": ".\\scripts\\start_mysql.sh"
   },
   "author": "Adrian Pardo",
   "license": "ISC"

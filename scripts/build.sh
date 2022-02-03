@@ -4,9 +4,14 @@ rm -r ./dist;
 
 mkdir ./dist;
 
+cd ./src/php/;
+
+npm run production;
+
+cd ../../;
+
+mv ./src/php/public ./dist/web;
+
 cp -r ./src/* ./dist;
 
-sass ./dist/web/scss/main.scss ./dist/web/css/main.css;
-
-rm -r ./dist/web/scss;
-rm -r ./dist/web/ts;
+read;
